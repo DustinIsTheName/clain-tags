@@ -116,15 +116,15 @@ class SurveyController < ApplicationController
           tags["pant_rise"] = parse_answers(question, result)
         when "What length do you like?"
           tags["pant_length"] = parse_answers(question, result)
-        when "Arms:"
+        when "My Arms:"
           tags["arms_assets"] = parse_answers(question, result)
-        when "Shoulders:"
+        when "My Shoulders:"
           tags["shoulders_assets"] = parse_answers(question, result)
         when "Midsection:"
           tags["midsection_assets"] = parse_answers(question, result)
         when "Rear:"
           tags["rear_assets"] = parse_answers(question, result)
-        when "Legs:"
+        when "My Legs:"
           tags["legs_assets"] = parse_answers(question, result)
         when "Work/ Business Casual:"
           tags["work_business_casual"] = parse_answers(question, result)
