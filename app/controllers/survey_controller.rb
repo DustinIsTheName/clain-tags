@@ -120,9 +120,9 @@ class SurveyController < ApplicationController
           tags["arms_assets"] = parse_answers(question, result)
         when "My Shoulders:"
           tags["shoulders_assets"] = parse_answers(question, result)
-        when "Midsection:"
+        when "My Midsection:"
           tags["midsection_assets"] = parse_answers(question, result)
-        when "Rear:"
+        when "My Rear:"
           tags["rear_assets"] = parse_answers(question, result)
         when "My Legs:"
           tags["legs_assets"] = parse_answers(question, result)
