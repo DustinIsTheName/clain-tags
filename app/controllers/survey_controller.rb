@@ -81,7 +81,7 @@ class SurveyController < ApplicationController
       question = questions.select{|q| q["id"] == result["id"]}.first
 
       if question
-        question_heading = question["headings"].first["heading"]
+        question_heading = question["headings"].first["heading"].gsub(/\A\p{Space}*|\p{Space}*\z/, '')
 
         case question_heading
         when "Email"
