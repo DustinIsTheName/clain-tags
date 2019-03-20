@@ -160,7 +160,7 @@ class SurveyController < ApplicationController
           tags["pinterest"] << result["answers"].first["text"]
         when "Other"
           tags["other"] << result["answers"].first["text"]
-        when "Please use the box below to tell us anything else you would like us to know about you, anything at all including specific likes and dislikes."
+        when "Please use the box below to tell us anything else you would like us to know about you, anything at all, including specific likes and dislikes. (249 character limit)"
           tags["info"] << result["answers"].first["text"].gsub(',', '~')
         end
       end
