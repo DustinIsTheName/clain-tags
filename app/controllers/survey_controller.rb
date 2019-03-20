@@ -161,7 +161,7 @@ class SurveyController < ApplicationController
         when "Other"
           tags["other"] << result["answers"].first["text"]
         when "Please use the box below to tell us anything else you would like us to know about you, anything at all including specific likes and dislikes."
-          tags["info"] << result["answers"].first["text"]
+          tags["info"] << result["answers"].first["text"].gsub(',', '~')
         end
       end
     end
